@@ -1,0 +1,46 @@
+.ballot{
+    width: 200px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #009B86;
+    justify-content: space-between;
+    margin: 0px 10px 20px 10px;
+    padding:0px 5px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 7px -1px cadetblue;
+    
+}
+.ballot:hover{
+    background-color: #34AC9C;
+    color: #CCCCCC;
+}
+.ballot-submit:hover{
+    background-color: #34AC9C;
+    color: #CCCCCC;
+}
+
+.ballot-title{
+    margin-top: 10px;
+}
+.ballot-img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+.ballot-submit{
+    border: none;
+    background-color: rgb(136, 150, 150);
+    color: white;
+    cursor: pointer;
+    height: 35px;
+    width: 100px;
+    margin-bottom: 5px;
+}
+.ballot-selected{
+    box-shadow: 3px 3px 7px -1px limegreen;
+    background-color: limegreen;
+}
