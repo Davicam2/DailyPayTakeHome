@@ -2,7 +2,7 @@
 
 ## Instructions
 
-*1- Clone the master Branch from this repo into a designated directory  
+>1- Clone the master Branch from this repo into a designated directory  
 *2- Navigate to said directory in command prompt  
 *3- Assuming all prerequisite software is installed run these commands   
 **i- `yarn install` to pull the node module dependencies.  
