@@ -12,7 +12,9 @@ iii- `yarn start` to compile and run the app in debug mode
 4- Navigate to localhost:3000   
 5- Hire Candidate  
 
-Thank you for the chance to learn react and examine the hook, breakpoint and lifecycle methodologies it employs!  
+Thank you for the chance to learn react and examine the react hook, breakpoint, lifecycle and componentization methodologies it employs!  
+
+I look forward to speaking with you again!
 
 
 
