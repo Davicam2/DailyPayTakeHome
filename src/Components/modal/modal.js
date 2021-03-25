@@ -12,7 +12,6 @@ const Modal = props => {
        
     }
 
-    
     const isSmScreen = useMediaQuery({
     maxDeviceWidth: 600
     })
@@ -22,29 +21,29 @@ const Modal = props => {
     } else {
         modalPairClass = `${mediaClasses.modalPairBase}`
     }
-if(!props.show){
-    return null;
-}
+    
+    if(!props.show){
+        return null;
+    }
 
-return (
-    <div className='modal-overlay' onClick={props.onClose}>
-        <div className='modal-body'>
-            <div className='modal-close' onClick={props.onClose}>X</div>
-            <div className='modal-title font-large'>Your Nominations</div>
-            <div className='modal-content'>
-                { props.nominations.map(nom => (
-                    <div className={modalPairClass} key={nom.nomination.id}>
-                        <div className='modal-headline'>{nom.category}:</div>
-                        <div className='modal-line-item'>{nom.nomination.title}</div>
-                    </div>
-                   )
-                )
-                }
+    return (
+        <div className='modal-overlay' onClick={props.onClose}>
+            <div className='modal-body'>
+                <div className='modal-close' onClick={props.onClose}>X</div>
+                <div className='modal-title font-large'>Your Nominations</div>
+                <div className='modal-content'>
+                    { props.nominations.map(nom => (
+                        <div className={modalPairClass} key={nom.nomination.id}>
+                            <div className='modal-headline'>{nom.category}:</div>
+                            <div className='modal-line-item'>{nom.nomination.title}</div>
+                        </div>
+                       )
+                    )
+                    }
+                </div>
             </div>
         </div>
-
-    </div>
-);
+    );
 
 }
 
