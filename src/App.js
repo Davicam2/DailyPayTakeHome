@@ -37,7 +37,6 @@ function App() {
     window.location.reload();
   }
   
-
   return (
     <div className="App">
       <header className="App-header">
