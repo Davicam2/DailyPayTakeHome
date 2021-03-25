@@ -4,27 +4,19 @@ import Catagory from './Components/Category/Category';
 import Modal from './Components/modal/modal';
 import React, {useState, useEffect} from 'react';
 
-
-
-
 function App() {
   const [selectedNoms, setSelectedNoms] = useState({selections: []});
   const [submitState, setSubmitState] = useState(false);
- 
   const [showModal, setModalState] = useState(false);
-  //state and update state method pair
   const [ballots, setBallots] = useState([]);
   let nominations = [];
+  
   useEffect(() => {
-    
     api.getBallotData()
     .then(res => {
-      
       setBallots(res.items)
     })
   }, [])
-
-
 
   function updateNominations(nomination){
     let index = nominations.findIndex(nom => nom.category === nomination.category);
@@ -37,8 +29,6 @@ function App() {
       setSelectedNoms(nominations);
       setSubmitState(true);
     }
-    
-    console.log(nominations)
   }
 
   function closeModal() {
@@ -64,7 +54,6 @@ function App() {
         nominiees={cat.items}
         reportNomination={updateNominations}
         >
-        
       </Catagory>)}
       </div>
       <button 
@@ -78,7 +67,6 @@ function App() {
       onClose={closeModal}
       ></Modal>
     </div>
-    
   );
 }
 
